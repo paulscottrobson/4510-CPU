@@ -1,0 +1,264 @@
+00 brk 7 7
+01 ora ix 6 5
+02 cle 1 2 
+03 see 1 2 
+04 tsb z 5 4
+05 ora z 3 3
+06 asl z 5 4
+07 rmb0 z 5 4
+08 php 3 3
+09 ora im 2 2
+0a asl ac 2 1
+0b tsy 1 1 
+0c tsb a 6 5
+0d ora a 4 4
+0e asl a 6 5
+0f bbr0 br16 5 4
+10 bpl r8 234 2
+11 ora iy 56 5
+12 ora iz 2 5
+13 bpl r16 3 3 
+14 trb z 5 4
+15 ora zx 4 3
+16 asl zx 6 4
+17 rmb1 z 5 4
+18 clc 2 1
+19 ora ay 45 4
+1a inc ac 2 1
+1b inz 1 1 
+1c trb a 6 5
+1d ora ax 45 4
+1e asl ax 67 5
+1f bbr1 br16 5 4
+20 jsr a 6 5
+21 and ix 6 5
+22 jsr ia 3 7 
+23 jsr iax 3 7
+24 bit z 3 4
+25 and z 3 3
+26 rol z 5 4
+27 rmb2 z 5 4
+28 plp 4 3
+29 and im 2 2
+2a rol ac 2 1
+2b tys 1 1 
+2c bit a 4 5
+2d and a 4 4
+2e rol a 6 5
+2f bbr2 br16 5 4
+30 bmi r8 234 2
+31 and iy 56 5
+32 and iz 2 5
+33 bmi r16 3 3 
+34 bit zx 4 4
+35 and zx 4 3
+36 rol zx 6 4
+37 rmb3 z 5 4
+38 sec 2 1
+39 and ay 45 4
+3a dec ac 2 1
+3b dez 1 1 
+3c bit ax 45 5
+3d and ax 45 4
+3e rol ax 67 5
+3f bbr3 br16 5 4
+40 rti 6 5
+41 eor ix 6 5
+42 neg  1 2
+43 asr  1 2
+44 asr z 2 4
+45 eor z 3 3
+46 lsr z 5 4
+47 rmb4 z 5 4
+48 pha 3 3
+49 eor im 2 2
+4a lsr ac 2 1
+4b taz 1 1 
+4c jmp a 3 3
+4d eor a 4 4
+4e lsr a 6 5
+4f bbr4 br16 5 4
+50 bvc r8 234 2
+51 eor iy 56 5
+52 eor iz 2 5
+53 bvc r16 3 3 
+54 asr zx 2 4
+55 eor zx 4 3
+56 lsr zx 6 4
+57 rmb5 z 5 4
+58 cli 2 1
+59 eor ay 45 4
+5a phy 3 3
+5b tab 1 1 
+5d eor ax 45 4
+5e lsr ax 67 5
+5f bbr5 br16 5 4
+60 rts 6 4
+61 adc ix 67 5
+62 rtn im 2 7
+63 bsr r16 3 5
+64 stz z 2 3 
+65 adc z 34 3
+66 ror z 5 4
+67 rmb6 z 5 4
+68 pla 4 3
+69 adc im 23 2
+6a ror ac 2 1
+6b tza 1 1 
+6c jmp ia 6 5
+6d adc a 45 4
+6e ror a 6 5
+6f bbr6 br16 5 4
+70 bvs r8 234 2
+71 adc iy 567 5
+72 adc iz 2 5
+73 bvs r16 3 3 
+74 stz zx 2 3 
+75 adc zx 45 3
+76 ror zx 6 4
+77 rmb7 z 5 4
+78 sei 2 2
+79 adc ay 456 4
+7a ply 4 3
+7b tba 1 1 
+7c jmp iax 6 5
+7d adc ax 456 4
+7e ror ax 67 5
+7f bbr7 br16 5 4
+80 bra a 34 2
+81 sta ix 6 5
+82 sta zsy 2 6
+83 bra r16 3 3 
+84 sty z 3 3
+85 sta z 3 3
+86 stx z 3 3
+87 smb0 z 5 4
+88 dey 2 1
+89 bit im 2 2
+8a txa 2 1
+8b sty ax 3 4
+8c sty a 4 4
+8d sta a 4 4
+8e stx a 4 4
+8f bbs0 br16 5 4
+90 bcc r8 234 2
+91 sta iy 6 5
+92 sta iz 2 5
+93 bcc r16 3 3 
+94 sty zx 4 3
+95 sta zx 4 3
+96 stx zy 4 3
+97 smb1 z 5 4
+98 tya 2 1
+99 sta ay 5 4
+9a txs 2 1
+9b stx ay 3 4
+9c stz a 3 4 
+9d sta ax 5 4
+9e stz ax 3 4
+9f bbs1 br16 5 4
+a0 ldy im 2 2
+a1 lda ix 6 5
+a2 ldx im 2 2
+a3 ldz im 2 2
+a4 ldy z 3 3
+a5 lda z 3 3
+a6 ldx z 3 3
+a7 smb2 z 5 4
+a8 tay 2 1
+a9 lda im 2 2
+aa tax 2 1
+ab ldz a 3 4 
+ac ldy a 4 4
+ad lda a 4 4
+ae ldx a 4 4
+af bbs2 br16 5 4
+b0 bcs r8 234 2
+b1 lda iy 56 5
+b2 lda iz 2 5
+b3 bcs r16 3 3
+b4 ldy zx 4 3
+b5 lda zx 4 3
+b6 ldx zy 4 3
+b7 smb3 z 5 4
+b8 clv 2 1
+b9 lda ay 45 4
+ba tsx 2 1
+bb ldz ax 3 4 
+bc ldy ax 45 4
+bd lda ax 45 4
+be ldx ay 45 4
+bf bbs3 br16 5 4
+c0 cpy im 2 2
+c1 cmp ix 6 5
+c2 cpz im 2 2 
+c3 dew z 2 6
+c4 cpy z 3 3
+c5 cmp z 3 3
+c6 dec z 5 4
+c7 smb4 z 5 4
+c8 iny 2 1
+c9 cmp im 2 2
+ca dex 2 1
+cb asw a 3 7
+cc cpy a 4 4
+cd cmp a 4 4
+ce dec a 6 5
+cf bbs4 br16 5 4
+d0 bne r8 234 2
+d1 cmp iy 56 5
+d2 cmp iz 2 5
+d3 bne r16 3 3
+d4 cpz z 2 3 
+d5 cmp zx 4 3
+d6 dec zx 6 4
+d7 smb5 z 5 4
+d8 cld 2 1
+d9 cmp ay 45 4
+da phx 3 3
+db phz 1 3 
+dc cpz a 3 4 
+dd cmp ax 45 4
+de dec ax 7 5
+df bbs5 br16 5 4
+e0 cpx im 2 2
+e1 sbc ix 67 5
+e2 lda zsy 2 6
+e3 inw z 2 6
+e4 cpx z 3 3
+e5 sbc z 34 3
+e6 inc z 5 4
+e7 smb6 z 5 4
+e8 inx 2 1
+e9 sbc im 23 2
+ea nop 2 1
+eb row a 3 6
+ec cpx a 4 4
+ed sbc a 45 4
+ee inc a 6 5
+ef bbs6 br16 5 4
+f0 beq r8 234 2
+f1 sbc iy 567 5
+f2 sbc iz 2 5
+f3 beq r16 3 3 
+f4 phw iw 3 5
+f5 sbc zx 45 3
+f6 inc zx 6 4
+f7 smb7 z 5 4
+f8 sed 2 1
+f9 sbc ay 456 4
+fa plx 4 3
+fb plz 1 3 
+fc phw a 3 7
+fd sbc ax 456 4
+fe inc ax 7 5
+ff bbs7 br16 5 4
+
+112 ora fiz 2 5
+132 and fiz 2 5
+152 eor fiz 2 5
+172 adc fiz 2 5
+192 sta fiz 2 5
+1b2 lda fiz 2 5
+1d2 cmp fiz 2 5
+1f2 sbc fiz 2 5
